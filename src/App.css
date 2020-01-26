@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: azure;
+}
+
+/* Header of the page */
+.header-tag {
+  background-color: black;
+  align-content: center;
+}
+
+.header {
+  color: #999;
+  text-align: center;
+}
+
+/* Main div */
+.main-div {
+  padding: 5% 7%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  background-color: gray;
+  grid-gap: 1rem;
+}
+
+.main-div > div:nth-child(odd){
+  background: #ddd;
+}
+
+/* Secondary div */
+.secondary-div {
+  border: 1px #000 solid;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #f9ff99;
+  align-content: center;
+}
+
+.secondary-div .video-name {
+  color: rebeccapurple;
+}
+
+.video-description {
+  border:2px #339f01 solid;
+  background-color: aliceblue;
+}
+
+.secondary-div .video-itself {
+  width: 70%;
+  height: 70%;
+}
