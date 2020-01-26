@@ -17,16 +17,16 @@ function App() {
   return (
     <div className="App">
       <div className="header-tag">
-        <header className="header">
-          <h1>Art Videos</h1>
+        <header className="header text">
+          <h1 className="header-text">Art Videos</h1>
         </header>
       </div>
       <div className="main-div">
         {data.map(video => (
           <div key={video.id} className="secondary-div">
-            <h2 className="video-name">{video.name}</h2>
-            <p className="video-description">{video.description}</p>
-            <video className="video-itself" controls src={video.video_url} />
+            <h2 className="video-name title-text">{video.name}</h2>
+            <p className="video-description text">{video.description}</p>
+            <video className="video-cont" controls src={video.video_url} />
           </div>
         ))}
       </div>
